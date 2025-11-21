@@ -36,9 +36,13 @@ public class Main {
             wordState.add('_');
         }
 
-        System.out.println("***************************");
-        System.out.println("Welcome To The Java Hangman");
-        System.out.println("***************************");
+        // System.out.println("***************************");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n" + //
+                "|       JAVA HANGMAN          |\r\n" + //
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n" + //
+                "");
+        // System.out.println("***************************");
+        System.out.println("Your word contains " + word.length() + " letters.\n");
 
         while (wrongGuesses < 6 && wordState.contains('_')) {
             System.out.println(getHangmanArt(wrongGuesses));
