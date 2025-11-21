@@ -1,43 +1,50 @@
 💀 Java Hangman ☕
+
 A simple terminal-based Hangman game written in Java.
 Guess letters, avoid mistakes, and save the stickman before it's too late!
 
-Word: _ _ _ _ _
-Guess a letter: >
-As you guess incorrectly, the hangman drawing progresses
-Your mission: guess the entire word before the drawing completes.
+🎯 Features
 
-✨ Features
-✔ Terminal UI
-✔ Random word support (optional via words.txt)
+✔ Terminal-based user interface
+
+✔ Random word selection (optional via words.txt)
+
 ✔ ASCII hangman art
-✔ Input validation
-✔ Case-insensitive character handling
 
-📁 Project Structure
-JavaHangman/
-│
-├── src/
-│   └── Main.java
-│
-└── words.txt  (optional random word file)
+✔ Input validation (only letters allowed)
+
+✔ Case-insensitive guesses
+
+📖 How It Works
+
+The game randomly selects a word from the provided list (or words.txt if available).
+
+The player guesses letters one at a time.
+
+Each wrong guess progresses the ASCII hangman drawing.
+
+The goal is to guess the entire word before the hangman is fully drawn.
 
 🚀 How to Run
-Clone the repository or copy the project folder.
-Compile the Java file:
+
+Clone the repository or download the project folder.
+
+Navigate to the src directory and compile the Java file:
+
 javac Main.java
 
+
 Run the game:
+
 java Main
 
-📌 Optional: Add Random Words
-Create a words.txt file and add words (one per line):\
+📝 Optional: Add Random Words
+
+You can add a words.txt file in the root directory with one word per line, for example:
+
 pizza
 java
 mango
 hangman
 keyboard
 developer
-
-
-The game can then pick a random word each time.
